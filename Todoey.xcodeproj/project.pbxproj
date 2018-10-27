@@ -10,6 +10,7 @@
 		B4FF14B4AC2DB024768C2CF7 /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF917BD8823B2611AACD60A4 /* Pods_Todoey.framework */; };
 		DD5F6319218153B60017A625 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F6318218153B60017A625 /* Items.swift */; };
 		DD5F631B218153CD0017A625 /* Catagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F631A218153CD0017A625 /* Catagory.swift */; };
+		DD752DFA218400F900D80682 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD752DF9218400F900D80682 /* SwipeTableViewController.swift */; };
 		DDA75BDB21742EF1008DE20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA75BDA21742EF1008DE20D /* AppDelegate.swift */; };
 		DDA75BDD21742EF1008DE20D /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA75BDC21742EF1008DE20D /* TodoListViewController.swift */; };
 		DDA75BE021742EF1008DE20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA75BDE21742EF1008DE20D /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		5AE18BD894A9367DB0F830EB /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 		DD5F6318218153B60017A625 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		DD5F631A218153CD0017A625 /* Catagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catagory.swift; sourceTree = "<group>"; };
+		DD752DF9218400F900D80682 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		DDA75BD721742EF1008DE20D /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA75BDA21742EF1008DE20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA75BDC21742EF1008DE20D /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				DDA75C16217B96D2008DE20D /* CatagoryViewController.swift */,
 				DDA75BDC21742EF1008DE20D /* TodoListViewController.swift */,
+				DD752DF9218400F900D80682 /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Todoey/Pods-Todoey-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -238,6 +242,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +260,7 @@
 				DD5F6319218153B60017A625 /* Items.swift in Sources */,
 				DDA75BDD21742EF1008DE20D /* TodoListViewController.swift in Sources */,
 				DD5F631B218153CD0017A625 /* Catagory.swift in Sources */,
+				DD752DFA218400F900D80682 /* SwipeTableViewController.swift in Sources */,
 				DDA75BDB21742EF1008DE20D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.torontoappworks.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.torontoappworks.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
